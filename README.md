@@ -1,29 +1,31 @@
-# README #
+## Sensika Angular Developer Challenge
 
-This README would normally document whatever steps are necessary to get your application up and running.
+### Introduction
+Imagine you just joined Sensika 7 years ago and we are now starting to develop our media monitoring solution.
+In essence our newly founded company is collecting media content from lots of media outlets.
 
-### What is this repository for? ###
+We want to create simple page with table like list of outlets for our source catalog management team. The list should have sortable columns and quick filters for filtering of the data.
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+#### Bonus points:
+If we have some more hours, we will like to have the following  in the project some:
 
-### How do I get set up? ###
+* SCSS stylesheets
+* NgRx or similar state management
+* Sample detailed master/detail view using routes and/or popups
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+### Criteria
+For full transparency, the test will be scored according to the following:
 
-### Contribution guidelines ###
+* Extendability to a real world scenario
+* Can handle easily a lot of large lists of media outlets
+* Ability to handle the largest possible number of articles, listed on the homepages
+* Reusable code
+* Decoupled code
+* Formatted code
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+### FAQ
+* Can I use any npm packages that I think can ease my work? Yes
+* Can I use some open source templates? Yes
+* Can I use custom project generator? Yes
+* Can I use mock api instead of staic code loading? Yes
+* Can I extend the sample list with more properties? Yes
