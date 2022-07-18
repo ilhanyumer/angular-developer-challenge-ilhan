@@ -12,6 +12,7 @@ If we have some more hours, we will like to have the following items in our proj
 * SCSS stylesheets
 * NgRx or similar state management
 * Sample detailed master/detail view using routes and/or popups
+* Paginated outlet list
 
 ### Criteria
 For full transparency, the test will be scored according to the following:
