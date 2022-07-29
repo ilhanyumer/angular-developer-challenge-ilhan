@@ -1,0 +1,37 @@
+
+<kendo-grid
+  [data]="gridData"
+  [pageSize]="pageSize"
+  [skip]="skip"
+  [pageable]="true"
+  [filterable]="true"
+
+  [filter]="filter"
+  (filterChange)="filterChange($event)"
+
+  (pageChange)="pageChange($event)"
+  [sortable]="true"
+  [kendoGridBinding]="gridData"
+  [sort]="sortDescriptor"
+  (sortChange)="handleSortChange($event)"
+  [height]="400"
+>
+  <kendo-grid-column field="title" title="Title" filter="text"></kendo-grid-column>
+  <kendo-grid-column field="country" title="Country" filter="text"></kendo-grid-column>
+  <kendo-grid-column field="rank_country" title="Rank Country" filter="numeric"></kendo-grid-column>
+  <kendo-grid-column field="rank_global" title="Rank Global" filter="numeric"></kendo-grid-column>
+  <kendo-grid-column field="outlet_id" title="Outlet ID" filter="text"></kendo-grid-column>
+
+  <kendo-grid-column field="url" title="Link">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <a [href]="dataItem.url">{{ dataItem.url }}</a>
+    </ng-template>
+  </kendo-grid-column>
+
+  <kendo-grid-column field="Icon">
+    <ng-template kendoGridCellTemplate let-dataItem>
+      <img [src]="dataItem.favicon_url" style="max-height: 20px" alt="icon">
+    </ng-template>
+  </kendo-grid-column>
+
+</kendo-grid>
